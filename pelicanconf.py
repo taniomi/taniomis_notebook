@@ -20,16 +20,21 @@ LINKS = (
     ("Pelican", "https://getpelican.com/"),
     ("Python.org", "https://www.python.org/"),
     ("Jinja2", "https://palletsprojects.com/p/jinja/"),
+    ("Pelican Themes", "https://pelicanthemes.com/"),
     ("You can modify those links in your config file", "#"),
 )
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ("GitHub", "https://github.com/taniomi"),
+    ("LinkedIn", "https://linkedin.com/in/taniomi"),
 )
 
 DEFAULT_PAGINATION = 10
 
+# Theme
+THEME = "themes/blue-penguin-dark"
+THEME_STATIC_DIR = 'static'
+
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
