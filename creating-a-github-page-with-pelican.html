@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                        <meta charset="utf-8" />
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                        <meta name="generator" content="Pelican" />
-                        <title>Creating a GitHub Page with Pelican</title>
-                        <link rel="stylesheet" href="https://taniomi.github.io/taniomis_notebook/theme/css/main.css" />
-    <meta name="description" content="The inspiration for using Pelican was heavily drawn from Simulatine's 100 Days of Code Blog. I followed the same steps as Simulatine, and found..." />
-        </head>
+<head>
+        <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Taniomi's Notebook | Creating a GitHub Page with Pelican</title>
+    <link rel="shortcut icon" type="image/png" href="./favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="./theme/css/pygments.css" type="text/css" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="Taniomi" />
 
-        <body id="index" class="home">
-                <header id="banner" class="body">
-                        <h1><a href="https://taniomi.github.io/taniomis_notebook/">Taniomi's Notebook</a></h1>
-                        <nav><ul>
-                                                <li class="active"><a href="https://taniomi.github.io/taniomis_notebook/category/misc.html">misc</a></li>
-                        </ul></nav>
-                </header><!-- /#banner -->
-  <section id="content" class="body">
-    <article>
-      <header>
-        <h1 class="entry-title">
-          <a href="https://taniomi.github.io/taniomis_notebook/creating-a-github-page-with-pelican.html" rel="bookmark"
-             title="Permalink to Creating a GitHub Page with Pelican">Creating a GitHub Page with Pelican</a></h1>
-      </header>
+</head>
+<body>
+    <header>
+        <nav style="overflow: hidden;">
+            <ul>
+                <li><a href="./">Home</a></li>
+            </ul>
+        </nav>
+        <div class="header_box" style="height: 50px">
+        <h1><a href="./">
+            <image src='' class="avatar" width="50px" /><span class="site_title">Taniomi's Notebook</span>
+            </a></h1></div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content">            <h4 class="date">jun 25, 2025</h4>
 
-      <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2025-06-25T20:05:00-03:00">
-                Published: qua 25 junho 2025
-        </abbr>
+            <article class="post">
+                <h2 class="title">
+                    <a href="./creating-a-github-page-with-pelican.html" rel="bookmark" title="Permanent Link to &quot;Creating a GitHub Page with Pelican&quot;">Creating a GitHub Page with Pelican</a>
+                </h2>
 
-                <address class="vcard author">
-                        By                                 <a class="url fn" href="https://taniomi.github.io/taniomis_notebook/author/taniomi.html">Taniomi</a>
-                </address>
-        <p>In <a href="https://taniomi.github.io/taniomis_notebook/category/misc.html">misc</a>.</p>
-        
-</footer><!-- /.post-info -->        <p>The inspiration for using Pelican was heavily drawn from <a href="https://simulatine.github.io/100DaysOfCode/day-4-moving-from-jekyll-to-pelican.html">Simulatine's 100 Days of Code Blog</a>.
+                
+                
+
+                <p>The inspiration for using Pelican was heavily drawn from <a href="https://simulatine.github.io/100DaysOfCode/day-4-moving-from-jekyll-to-pelican.html">Simulatine's 100 Days of Code Blog</a>.
 I followed the same steps as Simulatine, and found different challenges.</p>
 <p>I'm using uv and Python 3.11.</p>
 <p>Below are the steps I followed after failing to create a page for the first time.
@@ -108,7 +110,7 @@ Serving<span class="w"> </span>site<span class="w"> </span>at:<span class="w"> <
 </code></pre></div>
 
 <p>Opening the URL <code>http://127.0.0.1:8000/</code> in my browser, I had a simple empty page, but everything was working fine!</p>
-<p><img alt="my-site-successful-deploy" src="https://taniomi.github.io/taniomis_notebook/images/my-site-successful-deploy.png"></p>
+<p><img alt="my-site-successful-deploy" src="./images/my-site-successful-deploy.png"></p>
 <h2>Publishing to GitHub Pages</h2>
 <p>Now, it was time to publish the site to GitHub Pages.
 I followed the instructions in the <a href="docs.getpelican.com/en/latest/tips.html#publishing-a-project-site-to-github-pages-from-a-branch">Pelican docs</a>.</p>
@@ -153,10 +155,10 @@ $<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>
 <li>See the page</li>
 </ol>
 <p>I opened the URL <code>https://taniomi.github.io/taniomis_notebook/</code> in my browser and saw the result!</p>
-<p><img alt="my-site-successful-deploy" src="https://taniomi.github.io/taniomis_notebook/images/my-site-successful-deploy.png"></p>
+<p><img alt="my-site-successful-deploy" src="./images/my-site-successful-deploy.png"></p>
 <h2>Difficulties along the way</h2>
 <p>Just for the record, this is how your site will look like if you push the <code>gh-pages</code> branch first.</p>
-<p><img alt="my-site-first-deploy" src="https://taniomi.github.io/taniomis_notebook/images/my-site-first-deploy.png"></p>
+<p><img alt="my-site-first-deploy" src="./images/my-site-first-deploy.png"></p>
 <p>After some research, I found out that the site URL in <code>pelicanconf.py</code> wasn't set up.
 That means that the path to the theme files was incorrect.</p>
 <p>Checking <code>index.html</code>, I found out that it was using a relative path to the theme files.
@@ -178,37 +180,21 @@ It should be "https://taniomi.github.io/taniomis_notebook/theme/css/main.css".</
 </li>
 </ol>
 </div>
-      </div><!-- /.entry-content -->
+                <div class="clear"></div>
 
-    </article>
-  </section>
-                <section id="extras" class="body">
-                                <div class="blogroll">
-                                        <h2>links</h2>
-                                        <ul>
-                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
-                                                        <li><a href="https://www.python.org/">Python.org</a></li>
-                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                                                        <li><a href="#">You can modify those links in your config file</a></li>
-                                        </ul>
-                                </div><!-- /.blogroll -->
-                                <div class="social">
-                                        <h2>social</h2>
-                                        <ul>
-
-                                                        <li><a href="#">You can add links in your config file</a></li>
-                                                        <li><a href="#">Another social link</a></li>
-                                        </ul>
-                                </div><!-- /.social -->
-                </section><!-- /#extras -->
-
-                <footer id="contentinfo" class="body">
-                        <address id="about" class="vcard body">
-                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
-                        </address><!-- /#about -->
-
-                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-                </footer><!-- /#contentinfo -->
-
-        </body>
+                <div class="info">
+                    <a href="./creating-a-github-page-with-pelican.html">posted at 20:05</a>
+                </div>
+            </article>
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/tcarwash/blue-penguin-dark">Blue Penguin Dark</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
 </html>
