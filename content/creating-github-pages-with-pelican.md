@@ -1,5 +1,6 @@
 Title: Creating a GitHub Page with Pelican
 Date: 2025-06-25 20:05
+Category: Posts
 
 The inspiration for using Pelican was heavily drawn from [Simulatine's 100 Days of Code Blog](https://simulatine.github.io/100DaysOfCode/day-4-moving-from-jekyll-to-pelican.html).
 I followed the same steps as Simulatine, and found different challenges.

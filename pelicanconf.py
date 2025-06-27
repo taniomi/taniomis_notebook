@@ -18,7 +18,7 @@ RELATIVE_URLS = True
 # ======================
 # Theme and appearance
 # ======================
-THEME = "themes/blue-penguin-dark"
+# THEME = "themes/blue-penguin-dark"
 THEME_STATIC_DIR = 'static'
 
 # Theme-specific options
@@ -38,8 +38,7 @@ MENU_INTERNAL_PAGES = (
     ('Archives', 'archives', 'archives/index.html'),
 )
 MENUITEMS = (
-    ('GitHub', 'https://github.com/taniomi'),
-    ('Linux Kernel', 'https://www.kernel.org/'),
+    ('Home', '/'),
 )
 
 # Pagination URLs
