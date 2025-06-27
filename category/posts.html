@@ -4,41 +4,35 @@
                         <meta charset="utf-8" />
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <meta name="generator" content="Pelican" />
-                        <title>Creating a GitHub Page with Pelican</title>
-                        <link rel="stylesheet" href="./static/css/main.css" />
-    <meta name="description" content="The inspiration for using Pelican was heavily drawn from Simulatine's 100 Days of Code Blog. I followed the same steps as Simulatine, and found..." />
+                        <title>Taniomi's Notebook - Posts</title>
+                        <link rel="stylesheet" href="../static/css/main.css" />
         </head>
 
         <body id="index" class="home">
                 <header id="banner" class="body">
-                        <h1><a href="./">Taniomi's Notebook</a></h1>
+                        <h1><a href="../">Taniomi's Notebook</a></h1>
                         <nav><ul>
                                         <li><a href="https://github.com/taniomi">GitHub</a></li>
                                         <li><a href="https://www.kernel.org/">Linux Kernel</a></li>
-                                                <li><a href="./category/musings.html">Musings</a></li>
-                                                <li class="active"><a href="./category/posts.html">Posts</a></li>
+                                                <li><a href="../category/musings.html">Musings</a></li>
+                                                <li class="active"><a href="../category/posts.html">Posts</a></li>
                         </ul></nav>
                 </header><!-- /#banner -->
-  <section id="content" class="body">
-    <article>
-      <header>
-        <h1 class="entry-title">
-          <a href="./creating-a-github-page-with-pelican.html" rel="bookmark"
-             title="Permalink to Creating a GitHub Page with Pelican">Creating a GitHub Page with Pelican</a></h1>
-      </header>
 
-      <div class="entry-content">
+                <aside id="featured" class="body">
+                    <article>
+                        <h1 class="entry-title"><a href="../creating-a-github-page-with-pelican.html">Creating a GitHub Page with Pelican</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2025-06-25T20:05:00-03:00">
                 Published: qua 25 junho 2025
         </abbr>
 
                 <address class="vcard author">
-                        By                                 <a class="url fn" href="./author/taniomi.html">Taniomi</a>
+                        By                                 <a class="url fn" href="../author/taniomi.html">Taniomi</a>
                 </address>
-        <p>In <a href="./category/posts.html">Posts</a>.</p>
+        <p>In <a href="../category/posts.html">Posts</a>.</p>
         
-</footer><!-- /.post-info -->        <p>The inspiration for using Pelican was heavily drawn from <a href="https://simulatine.github.io/100DaysOfCode/day-4-moving-from-jekyll-to-pelican.html">Simulatine's 100 Days of Code Blog</a>.
+</footer><!-- /.post-info --><p>The inspiration for using Pelican was heavily drawn from <a href="https://simulatine.github.io/100DaysOfCode/day-4-moving-from-jekyll-to-pelican.html">Simulatine's 100 Days of Code Blog</a>.
 I followed the same steps as Simulatine, and found different challenges.</p>
 <p>I'm using uv and Python 3.11.</p>
 <p>Below are the steps I followed after failing to create a page for the first time.
@@ -111,7 +105,7 @@ Serving<span class="w"> </span>site<span class="w"> </span>at:<span class="w"> <
 </code></pre></div>
 
 <p>Opening the URL <code>http://127.0.0.1:8000/</code> in my browser, I had a simple empty page, but everything was working fine!</p>
-<p><img alt="my-site-successful-deploy" src="./images/my-site-successful-deploy.png"></p>
+<p><img alt="my-site-successful-deploy" src="../images/my-site-successful-deploy.png"></p>
 <h2>Publishing to GitHub Pages</h2>
 <p>Now, it was time to publish the site to GitHub Pages.
 I followed the instructions in the <a href="docs.getpelican.com/en/latest/tips.html#publishing-a-project-site-to-github-pages-from-a-branch">Pelican docs</a>.</p>
@@ -156,10 +150,10 @@ $<span class="w"> </span>git<span class="w"> </span>push<span class="w"> </span>
 <li>See the page</li>
 </ol>
 <p>I opened the URL <code>https://taniomi.github.io/taniomis_notebook/</code> in my browser and saw the result!</p>
-<p><img alt="my-site-successful-deploy" src="./images/my-site-successful-deploy.png"></p>
+<p><img alt="my-site-successful-deploy" src="../images/my-site-successful-deploy.png"></p>
 <h2>Difficulties along the way</h2>
 <p>Just for the record, this is how your site will look like if you push the <code>gh-pages</code> branch first.</p>
-<p><img alt="my-site-first-deploy" src="./images/my-site-first-deploy.png"></p>
+<p><img alt="my-site-first-deploy" src="../images/my-site-first-deploy.png"></p>
 <p>After some research, I found out that the site URL in <code>pelicanconf.py</code> wasn't set up.
 That means that the path to the theme files was incorrect.</p>
 <p>Checking <code>index.html</code>, I found out that it was using a relative path to the theme files.
@@ -180,11 +174,8 @@ It should be "https://taniomi.github.io/taniomis_notebook/theme/css/main.css".</
 <p>https://quarto.org/&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
-</div>
-      </div><!-- /.entry-content -->
-
-    </article>
-  </section>
+</div>                    </article>
+                </aside><!-- /#featured -->
                 <section id="extras" class="body">
                                 <div class="blogroll">
                                         <h2>links</h2>
